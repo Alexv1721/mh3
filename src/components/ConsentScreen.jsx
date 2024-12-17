@@ -20,10 +20,8 @@ function handledeny(){
 async function handleallow(){
 
 try{
-  // const res=await sdk.requestConsent('customer113', 'sdsdsd','http:localhost:3000/validate','1.0','http://policy.com','please agree','consent_code','read and write data')
-  const res=await sdk.validateToken(
-    'kjjkjhjhvfcjjh'
-  )
+  const res=await sdk.requestConsent('customer113', 'sdsdsd','http:localhost:3000/validate','1.0','http://policy.com','please agree','consent_code','read and write data')
+ 
   console.log(res);
   
   if(res){
