@@ -21,7 +21,7 @@ function App() {
 
      <BrowserRouter>
       <Routes>
-<Route path="/" index element={<EndScreen data={data} setdata={setdata}/>}/>
+<Route path="/" index element={< InputScreen data={data} setdata={setdata}/>}/>
 <Route path='validate' element={<ValidateToken/>}/>
   <Route path='consent/:uid' element={<ConsentScreen data={data} setdata={setdata} />}/>
   <Route path='final' element={<EndScreen/>}/>
